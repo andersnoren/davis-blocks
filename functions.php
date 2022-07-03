@@ -7,8 +7,14 @@
 if ( ! function_exists( 'davis_blocks_setup' ) ) :
 	function davis_blocks_setup() {
 
-		load_theme_textdomain( 'tove', get_template_directory() . '/languages' );
+		// Localize the theme.
+		load_theme_textdomain( 'davis-blocks', get_template_directory() . '/languages' );
+
+		// Set the post thumbnail size.
 		set_post_thumbnail_size( 620, 9999 );
+
+		// Add support for block styles.
+		add_theme_support( 'wp-block-styles' );
 
 	}
 	add_action( 'after_setup_theme', 'davis_blocks_setup' );
