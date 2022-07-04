@@ -3,17 +3,14 @@
 	Theme Name: Davis Blocks
     Text Domain: davis-blocks
 	Version: 0.1
-	Description: Davis Blocks is a clean and simple block theme built for Full Site Editing. You can use it as-is if you want a clean and simple blog, or use it as a foundation for something much greater with the Site Editor.
-	Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
+	Description: Davis Blocks is a clean and simple block theme built for Full Site Editing, based on the Davis theme. Use it out of the box if you want a highly readable blog theme, or build it into something much greater with the Site Editor.
+	Tags: blog, one-column, custom-background, custom-colors, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
 	Author: Anders Norén
 	Author URI: https://andersnoren.se
 	License: GNU General Public License version 2.0
-	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	License URI: https://gnu.org/licenses/gpl-2.0.html
 	Requires PHP: 5.6
 	Tested up to: 6.0
-
-	All files, unless otherwise stated, are released under the GNU General Public License
-	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 
 /* --------------------------------------------------------------------------------------------- */
 
@@ -33,12 +30,6 @@ a:hover {
 	text-decoration: none;
 }
 
-.wp-block-navigation .wp-block-navigation-item a:hover,
-.wp-block-navigation .wp-block-navigation-item a:focus {
-	text-decoration: underline;
-	text-decoration-style: solid;
-}
-
 /*
  * Input styles.
  */
@@ -51,7 +42,7 @@ input, textarea, keygen, select, button {
 
 /*
  * Button hover styles.
- * 
+ *
  * Necessary until the following issue is resolved in Gutenberg:
  * https://github.com/WordPress/gutenberg/issues/27075
  */
@@ -108,8 +99,6 @@ body>.is-root-container>.wp-block-template-part>.wp-block-cover,
 
 /*
  * Block: Separator.
- * 
- * Davis separator style.
  */
 
 hr.is-style-davis-separator {
@@ -137,7 +126,9 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 
 
 /*
- * Everything below = temporary workarounds until the Site Editor adds more block styling options.
+ * Block specific workarounds.
+ *
+ * Neccessary until the Site Editor adds more block styling options.
  */
 
 
@@ -145,7 +136,7 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
  * Block: Calendar.
  */
 
-.wp-block-calendar table caption, 
+.wp-block-calendar table caption,
 .wp-block-calendar table tbody {
 	color: var( --wp--preset--color--foreground );
 }
@@ -165,15 +156,6 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 
 .wp-block-image figcaption {
 	color: inherit;
-}
-
-/*
- * Block: Paragraph.
- */
-
-.has-drop-cap:not(:focus):first-letter {
-	font-size: 5.5em;
-	margin: .05em 1rem .5rem 0;
 }
 
 /*
@@ -203,4 +185,23 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border-color: var(--wp--preset--color--secondary) !important;
+}
+
+/*
+ * Block: Table.
+ */
+
+:root .wp-block-table *,
+.wp-block-table.is-style-stripes {
+	border-color: var( --wp--preset--color--secondary );
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: var( --wp--preset--color--secondary );
+}
+
+.wp-block-table figcaption {
+	color: inherit;
+	font-size: var(--wp--preset--font-size--small);
+	padding: .5em 0;
 }

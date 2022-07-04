@@ -6,7 +6,7 @@ Requires PHP: 5.6
 Tested up to: 6.0
 Stable tag: trunk
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://gnu.org/licenses/gpl-2.0.html
 
 
 == Installation ==
@@ -16,7 +16,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 3. Activate the theme.
 
 
-== Licenses ==
+== Copyright ==
+
+Davis Blocks WordPress Theme, Copyright (c) 2022 Anders Norén.
 
 Davis Blocks is derived from the Tove theme, Copyright (c) 2021 Anders Norén.
 Tove is distributed under the terms of the GNU GPL version 2.0.
@@ -27,13 +29,19 @@ PT Serif font
 License: SIL Open Font License, 1.1 
 Source: https://fonts.google.com/specimen/PT+Serif
 
+Photograph in screenshot.png
+Author: Marcus Vegas
+License: CC BY-SA 2.0
+Source: https://www.flickr.com/photos/60168589@N00/481764986
+
 Code from Wei
-Copyright (c) 2022 Rich Tabor
+Copyright (c) 2021 Rich Tabor
 License: GPLv2, https://www.gnu.org/licenses/gpl-2.0.html
 Source: https://wordpress.org/themes/wei/
 Included as part of:
 	- Temporary alignment styles in style.css.
-	- Inspiration for overall Templates and Template Parts structure.
+	- Overall Templates and Template Parts structure.
+
 
 == Changelog ==
 

@@ -51,6 +51,7 @@
 		"typography": {
 			"customFontSize": true,
 			"customLineHeight": true,
+			"dropCap": false,
 			"fontFamilies": [
 				{
 					"fontFamily": "\"PT Serif\", ui-serif, Georgia, serif",
@@ -170,14 +171,6 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
-				}
-			},
-			"core/calendar": {
-				"color": {
-					"text": "var(--wp--preset--color--foreground)"
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"core/code": {
@@ -316,7 +309,7 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--foreground)"
+					"text": "inherit"
 				}
 			}
 		},
