@@ -44,7 +44,22 @@ a:hover {
  */
 
 input, textarea, keygen, select, button {
+	background-color: inherit;
+	color: inherit;
 	font-family: inherit;
+}
+
+/*
+ * Button hover styles.
+ * 
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover,
+.wp-block-button__link:visited {
+	color: var( --wp--preset--color--background );
 }
 
 /*
@@ -120,10 +135,40 @@ hr.is-style-davis-separator:after {
 hr.is-style-davis-separator:before { left: calc( 50% - 14px ); }
 hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 
+
+/*
+ * Everything below = temporary workarounds until the Site Editor adds more block styling options.
+ */
+
+ /*
+ * Block: Calendar.
+ */
+
+.wp-block-calendar table caption, 
+.wp-block-calendar table tbody {
+	color: var( --wp--preset--color--foreground );
+}
+
+.wp-block-calendar th,
+.wp-block-calendar tbody td {
+	border-color: var( --wp--preset--color--secondary );
+}
+
+.wp-block-calendar table th {
+	background-color: var( --wp--preset--color--secondary );
+}
+
+
+/*
+ * Block: Image.
+ */
+
+.wp-block-image figcaption {
+	color: inherit;
+}
+
 /*
  * Block: Post Comments Form.
- * 
- * Temporary workaround until the Post Comments Form block allows for more style control.
  */
 
 .required-field-message,
@@ -141,4 +186,12 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 .comment-form .comment-notes:first-child + *,
 .comment-form .logged-in-as:first-child + * {
 	margin-top: 30px;
+}
+
+/*
+ * Block: Search Form.
+ */
+
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+	border-color: var(--wp--preset--color--secondary) !important;
 }
