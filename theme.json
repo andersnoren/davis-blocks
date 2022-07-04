@@ -31,6 +31,7 @@
 		"custom": {
 			"spacing": {
 				"baseline": "16px",
+				"medium": "calc( 2.5 * var( --wp--custom--spacing--baseline ) )",
 				"large": "clamp( ( 3 * var( --wp--custom--spacing--baseline ) ), 10vw, ( 5 * var( --wp--custom--spacing--baseline ) ))",
 				"outer": "max(24px, 5vw)"
 			},

@@ -98,6 +98,24 @@ body>.is-root-container>.wp-block-template-part>.wp-block-cover,
 }
 
 /*
+ * Search and File Block button styles.
+ *
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	background-color: var( --wp--preset--color--foreground );
+	border: none;
+	border-radius: 0;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+/*
  * Block: Separator.
  */
 
@@ -151,6 +169,33 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 }
 
 /*
+ * Block: File.
+ */
+
+.wp-block-file {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+:root .wp-block-file__button:not(:only-child) {
+	margin-left: var( --wp--custom--spacing--baseline );
+}
+
+/*
+ * Block: Heading.
+ */
+
+.wp-block-post-content h1:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h2:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h3:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h4:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h5:not([style*="margin-top"]):not(:first-child),
+.wp-block-post-content h6:not([style*="margin-top"]):not(:first-child) {
+	margin-top: var( --wp--custom--spacing--medium ) !important;
+}
+
+/*
  * Block: Image.
  */
 
@@ -183,8 +228,24 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
  * Block: Search Form.
  */
 
+.wp-block-search__input,
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border-color: var(--wp--preset--color--secondary) !important;
+}
+
+.wp-block-search__input {
+	margin: 0;
+	padding: .75em;
+}
+
+.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+.wp-block-search__button-inside .wp-block-search__input {
+	margin: 0;
+	padding: .375em .5em !important;
+}
+
+.wp-block-search__button {
+	margin: 0 0 0 .75em;
 }
 
 /*
