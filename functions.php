@@ -16,6 +16,9 @@ if ( ! function_exists( 'davis_blocks_setup' ) ) :
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
 
+		// Add editor styles.
+		add_editor_style( 'style.css' );
+
 	}
 	add_action( 'after_setup_theme', 'davis_blocks_setup' );
 endif;
@@ -28,12 +31,7 @@ endif;
 if ( ! function_exists( 'davis_blocks_styles' ) ) :
 	function davis_blocks_styles() {
 
-		wp_register_style( 'davis-blocks-styles-shared', 		get_theme_file_uri( '/assets/css/shared.css' ) );
-		wp_register_style( 'davis-blocks-styles-blocks', 		get_theme_file_uri( '/assets/css/blocks.css' ) );
-
-		$dependencies = apply_filters( 'davis_blocks_style_dependencies', array( 'davis-blocks-styles-shared', 'davis-blocks-styles-blocks' ) );
-
-		wp_enqueue_style( 'davis-blocks-styles', get_theme_file_uri( '/assets/css/front-end.css' ), $dependencies, wp_get_theme( 'Tove' )->get( 'Version' ) );
+		wp_enqueue_style( 'davis-blocks-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'davis-blocks' )->get( 'Version' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'davis_blocks_styles' );
@@ -41,18 +39,20 @@ endif;
 
 
 /*	-----------------------------------------------------------------------------------------------
-	ENQUEUE EDITOR STYLES
+	BLOCK STYLES
+	Register theme specific block styles.
 --------------------------------------------------------------------------------------------------- */
 
-if ( ! function_exists( 'davis_blocks_editor_styles' ) ) :
-	function davis_blocks_editor_styles() {
+if ( ! function_exists( 'davis_blocks_register_block_styles' ) ) :
+	function davis_blocks_register_block_styles() {
 
-		add_editor_style( array( 
-			'./assets/css/editor.css',
-			'./assets/css/blocks.css',
-			'./assets/css/shared.css',
+		// Separator: Davis Separator
+		register_block_style( 'core/separator', array(
+			'name'  	=> 'davis-separator',
+			'label' 	=> esc_html__( 'Diamonds', 'davis-blocks' ),
 		) );
-
+		
 	}
-	add_action( 'admin_init', 'davis_blocks_editor_styles' );
+	add_action( 'init', 'davis_blocks_register_block_styles' );
 endif;
+

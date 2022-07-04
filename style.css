@@ -3,7 +3,7 @@
 	Theme Name: Davis Blocks
     Text Domain: davis-blocks
 	Version: 0.1
-	Description: Davis Blocks is a clean and simple block theme built for Full Site Editing. You can use it as-is if you want a clean and simple blog, or use it as a foundation for something much greater with the Site Editor in WordPress 6.0 or later.
+	Description: Davis Blocks is a clean and simple block theme built for Full Site Editing. You can use it as-is if you want a clean and simple blog, or use it as a foundation for something much greater with the Site Editor.
 	Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
 	Author: Anders Norén
 	Author URI: https://andersnoren.se
@@ -16,3 +16,107 @@
 	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 
 /* --------------------------------------------------------------------------------------------- */
+
+
+/*
+ * Link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
+
+/*
+ * Alignment styles.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks,
+body>.is-root-container,
+.edit-post-visual-editor__post-title-wrapper,
+.wp-block-group.alignfull,
+.wp-block-group.has-background,
+.wp-block-cover.alignfull,
+.is-root-container .wp-block[data-align="full"]>.wp-block-group,
+.is-root-container .wp-block[data-align="full"]>.wp-block-cover {
+	padding-left: var(--wp--custom--spacing--outer);
+	padding-right: var(--wp--custom--spacing--outer);
+}
+
+.wp-site-blocks .alignfull,
+.wp-site-blocks>.wp-block-group.has-background,
+.wp-site-blocks>.wp-block-cover,
+.wp-site-blocks>.wp-block-template-part>.wp-block-group.has-background,
+.wp-site-blocks>.wp-block-template-part>.wp-block-cover,
+body>.is-root-container>.wp-block-cover,
+body>.is-root-container>.wp-block-template-part>.wp-block-group.has-background,
+body>.is-root-container>.wp-block-template-part>.wp-block-cover,
+.is-root-container .wp-block[data-align="full"] {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
+}
+
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
+.is-root-container .wp-block[data-align="full"]>*:not(.wp-block-group) .wp-block[data-align="full"] {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: inherit;
+}
+
+/*
+ * Davis Separator Style.
+ */
+
+hr.is-style-davis-separator {
+	border-width: 1.5px;
+	position: relative;
+}
+
+hr.is-style-davis-separator:before,
+hr.is-style-davis-separator:after {
+	background-color: var( --wp--preset--color--background );
+	border: 1.5px solid;
+	box-sizing: border-box;
+	content: "";
+	display: block;
+	height: 12px;
+	position: absolute;
+		top: calc( 50% - 5.5px );
+	transform: rotate( 45deg );
+	width: 12px;
+}
+
+hr.is-style-davis-separator:before {
+	left: calc( 50% - 14px );
+}
+
+hr.is-style-davis-separator:after {
+	left: calc( 50% + 2px );
+}
+
+/*
+ * Archive Header.
+ */
+
+.archive-header .separator-wrapper:only-child { display: none; }
