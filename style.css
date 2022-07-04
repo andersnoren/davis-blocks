@@ -140,6 +140,7 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
  * Everything below = temporary workarounds until the Site Editor adds more block styling options.
  */
 
+
  /*
  * Block: Calendar.
  */
@@ -158,13 +159,21 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 	background-color: var( --wp--preset--color--secondary );
 }
 
-
 /*
  * Block: Image.
  */
 
 .wp-block-image figcaption {
 	color: inherit;
+}
+
+/*
+ * Block: Paragraph.
+ */
+
+.has-drop-cap:not(:focus):first-letter {
+	font-size: 5.5em;
+	margin: .05em 1rem .5rem 0;
 }
 
 /*
