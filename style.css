@@ -193,11 +193,11 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 
 :root .wp-block-table *,
 .wp-block-table.is-style-stripes {
-	border-color: var( --wp--preset--color--secondary );
+	border-color: var(--wp--preset--color--secondary);
 }
 
 .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-	background-color: var( --wp--preset--color--secondary );
+	background-color: var(--wp--preset--color--secondary);
 }
 
 .wp-block-table figcaption {
@@ -205,3 +205,12 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 	font-size: var(--wp--preset--font-size--small);
 	padding: .5em 0;
 }
+
+/*
+ * Block: Navigation.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--custom--spacing--outer);
+}
+
