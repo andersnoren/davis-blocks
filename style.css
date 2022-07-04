@@ -274,4 +274,3 @@ hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 .wp-block-navigation__responsive-container.is-menu-open {
 	padding: var(--wp--custom--spacing--outer);
 }
-
