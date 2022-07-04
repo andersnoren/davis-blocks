@@ -1,0 +1,27 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header","align":"full","layout":{"inherit":true}} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"tagName":"header","align":"wide","className":"archive-header","layout":{"inherit":true}} -->
+	<header class="wp-block-group alignwide archive-header">
+		<!-- wp:query-title {"type":"archive","textAlign":"center","fontSize":"medium"} /-->
+
+		<!-- wp:term-description {"textAlign":"center"} /-->
+
+		<!-- wp:group {"style":{"spacing":{"margin":{"top":"4em","bottom":"4em"}}},"className":"separator-wrapper"} -->
+		<div class="wp-block-group separator-wrapper" style="margin-top:4em;margin-bottom:4em">
+			<!-- wp:separator {"backgroundColor":"secondary","className":"is-style-davis-separator"} -->
+			<hr class="wp-block-separator has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-davis-separator" />
+			<!-- /wp:separator -->
+		</div>
+		<!-- /wp:group -->
+	</header>
+	<!-- /wp:group -->
+
+	<!-- wp:template-part {"slug":"loop","theme":"davis-blocks"} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer","align":"full","layout":{"inherit":true}} /-->

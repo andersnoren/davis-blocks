@@ -17,9 +17,9 @@
 
 /* --------------------------------------------------------------------------------------------- */
 
-
 /*
  * Link styles.
+ *
  * Necessary until the following issue is resolved in Gutenberg:
  * https://github.com/WordPress/gutenberg/issues/27075
  */
@@ -40,6 +40,14 @@ a:hover {
 }
 
 /*
+ * Input styles.
+ */
+
+input, textarea, keygen, select, button {
+	font-family: inherit;
+}
+
+/*
  * Alignment styles.
  *
  * Relevant issues:
@@ -51,7 +59,6 @@ a:hover {
 body>.is-root-container,
 .edit-post-visual-editor__post-title-wrapper,
 .wp-block-group.alignfull,
-.wp-block-group.has-background,
 .wp-block-cover.alignfull,
 .is-root-container .wp-block[data-align="full"]>.wp-block-group,
 .is-root-container .wp-block[data-align="full"]>.wp-block-cover {
@@ -85,38 +92,53 @@ body>.is-root-container>.wp-block-template-part>.wp-block-cover,
 }
 
 /*
- * Davis Separator Style.
+ * Block: Separator.
+ * 
+ * Davis separator style.
  */
 
 hr.is-style-davis-separator {
-	border-width: 1.5px;
+	border-width: 1px;
+	height: 1px !important;
 	position: relative;
 }
 
 hr.is-style-davis-separator:before,
 hr.is-style-davis-separator:after {
 	background-color: var( --wp--preset--color--background );
-	border: 1.5px solid;
+	border: 1px solid;
 	box-sizing: border-box;
 	content: "";
 	display: block;
 	height: 12px;
 	position: absolute;
-		top: calc( 50% - 5.5px );
+		top: calc( 50% - 6px );
 	transform: rotate( 45deg );
 	width: 12px;
 }
 
-hr.is-style-davis-separator:before {
-	left: calc( 50% - 14px );
-}
-
-hr.is-style-davis-separator:after {
-	left: calc( 50% + 2px );
-}
+hr.is-style-davis-separator:before { left: calc( 50% - 14px ); }
+hr.is-style-davis-separator:after { left: calc( 50% + 2px ); }
 
 /*
- * Archive Header.
+ * Block: Post Comments Form.
+ * 
+ * Temporary workaround until the Post Comments Form block allows for more style control.
  */
 
-.archive-header .separator-wrapper:only-child { display: none; }
+.required-field-message,
+.comment-notes {
+	display: none;
+}
+
+.comment-reply-title,
+.logged-in-as {
+	font-size: inherit;
+	text-align: center;
+}
+
+.comment-form:first-child:not(.logged-in-as),
+.comment-form .comment-notes:first-child + *,
+.comment-form .logged-in-as:first-child + * {
+	margin-top: 30px;
+}

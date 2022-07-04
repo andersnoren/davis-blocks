@@ -33,6 +33,7 @@ License: GPLv2, https://www.gnu.org/licenses/gpl-2.0.html
 Source: https://wordpress.org/themes/wei/
 Included as part of:
 	- Temporary alignment styles in style.css.
+	- Inspiration for overall Templates and Template Parts structure.
 
 == Changelog ==
 

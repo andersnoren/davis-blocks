@@ -1,9 +1,8 @@
 <?php
-/**
- * Without this file, WordPress will consider the theme broken :(
- */
 
-if ( current_user_can( 'activate_plugins' ) ) {
-	esc_html_e( 'This theme was built for the WordPress experimental full-site-editing feature. You need to install and activate the Gutenberg plugin to make it work.', 'davis-blocks' );
-}
+/*
+ * This file is empty because this is a block theme, and block themes do no use PHP based template files.
+ * The file can be removed as soon as the automated checks on the Theme Directory submissions page
+ * have been updated to allow themes without index.php to be submitted.
+ */
 

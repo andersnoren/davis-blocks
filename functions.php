@@ -7,7 +7,7 @@
 if ( ! function_exists( 'davis_blocks_setup' ) ) :
 	function davis_blocks_setup() {
 
-		// Localize the theme.
+		// Make theme localizable.
 		load_theme_textdomain( 'davis-blocks', get_template_directory() . '/languages' );
 
 		// Set the post thumbnail size.
@@ -25,7 +25,7 @@ endif;
 
 
 /*	-----------------------------------------------------------------------------------------------
-	ENQUEUE STYLES
+	ENQUEUE STYLESHEETS
 --------------------------------------------------------------------------------------------------- */
 
 if ( ! function_exists( 'davis_blocks_styles' ) ) :
@@ -39,14 +39,13 @@ endif;
 
 
 /*	-----------------------------------------------------------------------------------------------
-	BLOCK STYLES
-	Register theme specific block styles.
+	REGISTER BLOCK STYLES
 --------------------------------------------------------------------------------------------------- */
 
 if ( ! function_exists( 'davis_blocks_register_block_styles' ) ) :
 	function davis_blocks_register_block_styles() {
 
-		// Separator: Davis Separator
+		// Separator: Diamonds
 		register_block_style( 'core/separator', array(
 			'name'  	=> 'davis-separator',
 			'label' 	=> esc_html__( 'Diamonds', 'davis-blocks' ),
@@ -55,4 +54,3 @@ if ( ! function_exists( 'davis_blocks_register_block_styles' ) ) :
 	}
 	add_action( 'init', 'davis_blocks_register_block_styles' );
 endif;
-
