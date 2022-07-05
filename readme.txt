@@ -30,9 +30,9 @@ License: SIL Open Font License, 1.1
 Source: https://fonts.google.com/specimen/PT+Serif
 
 Photograph in screenshot.png
-Author: Marcus Vegas
-License: CC BY-SA 2.0
-Source: https://www.flickr.com/photos/60168589@N00/481764986
+Author: Karol Dach
+License: CC0
+Source: https://stocksnap.io/photo/architectural-design-2XJ1VEE57Q
 
 Code from Wei
 Copyright (c) 2021 Rich Tabor
@@ -45,5 +45,20 @@ Included as part of:
 
 == Changelog ==
 
-Version 0.1 (2022-XX-XX)
+Version 0.1.1 (2022-07-05)
+-------------------------
+- Changed theme screenshot to a CC0 one, and updated the licensing information.
+- Restructured style.css slightly.
+- Removed the post thumbnail size function call.
+- Removed the theme localization function call.
+- Removed the function_exists() checks in functions.php, since everything done by functions.php in Davis Blocks can be modified with Core filters.
+- Added theme URI to style.css.
+- Tweaked the padding of the group block.
+- Updated the theme description.
+- Updated loop.html to remove the is-style-tove-vertical-separators class from the Query Pagination block.
+- Theme.json: Removed font-weight from headings, since 700 is the default.
+- Theme.json: Removed undefined CSS variable from cover::spacing::padding.
+- Theme.json: Removed disallowed customLineHeight property.
+
+Version 0.1 (2022-07-04)
 -------------------------
