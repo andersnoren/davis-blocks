@@ -162,8 +162,7 @@
 		"blocks": {
 			"core/button": {
 				"border": {
-					"radius": "0px",
-					"width": "1px"
+					"radius": "0px"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--foreground)",

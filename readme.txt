@@ -45,6 +45,17 @@ Included as part of:
 
 == Changelog ==
 
+Version 0.1.2 (2022-07-06)
+-------------------------
+- Better post header structure on single.html and page.html.
+- Removed unnecessary groups around separators in the comment area of single.html.
+- Better default styles for input elements.
+- Added CSS to match the alignment of the post editor title to match the front-end.
+- Set all figcaptions to use the small font size, and made the figcaption targeting more universal.
+- Button block: Reset the border width to the default 2px, to match default padding values.
+- Added hover styles to navigation links.
+- Adjusted the theme description.
+
 Version 0.1.1 (2022-07-05)
 -------------------------
 - Changed theme screenshot to a CC0 one, and updated the licensing information.
