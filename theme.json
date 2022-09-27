@@ -181,11 +181,6 @@
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
-			"core/cover": {
-				"color": {
-					"text": "#ffffff"
-				}
-			},
 			"core/paragraph": {
 				"typography": {
 					"lineHeight": "calc( 1em + 10px )"

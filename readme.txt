@@ -45,6 +45,10 @@ Included as part of:
 
 == Changelog ==
 
+Version 0.1.3 (2022-09-27)
+-------------------------
+- Updated <!-- wp:template-part --/> to omit the "theme":"davis-blocks" code, fixing issues when modifying template parts in child themes (thanks, @janboddez).
+
 Version 0.1.2 (2022-07-06)
 -------------------------
 - Better post header structure on single.html and page.html.
