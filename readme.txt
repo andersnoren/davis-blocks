@@ -1,9 +1,9 @@
 === Davis Blocks ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Requires at least: 6.0
+Requires at least: 6.1
 Requires PHP: 5.6
-Tested up to: 6.0
+Tested up to: 6.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,20 @@ Included as part of:
 
 
 == Changelog ==
+
+Version 0.2 (2023-02-08)
+-------------------------
+- Bumped "Tested up to" and "Requires at least" to 6.1.
+- Removed some custom styles for the search form and tables from style.css.
+- Bumped copyright year in the footer to 2023.
+- Changed the menu icon to a text button, to better match the original Davis.
+- WordPress 6.1 updates:
+	- Added Spacing Sizes support, and updated templates and template parts to use it.
+	- Added button, heading and caption element styles in theme.json.
+	- Added theme.json hover effects, and removed the old CSS for it.
+	- Enables fluid font sizes in theme.json.
+	- Enabled useRootPaddingAwareAlignments in theme.json, and removed custom alignment styles in CSS.
+	- Enabled blockGap in theme.json.
 
 Version 0.1.4 (2022-10-07)
 -------------------------

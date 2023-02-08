@@ -1,21 +1,22 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header","align":"full","layout":{"inherit":true}} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","align":"full","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
-<main class="wp-block-group">
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"inherit":true,"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:0;margin-bottom:0">
 
-	<!-- wp:group {"tagName":"header","align":"wide","className":"archive-header","layout":{"inherit":true}} -->
-	<header class="wp-block-group alignwide archive-header">
-		<!-- wp:query-title {"type":"archive","textAlign":"center","fontSize":"medium"} /-->
+	<!-- wp:group {"tagName":"header","align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80","padding":{"bottom":"var:preset|spacing|80"}}},"className":"archive-header","layout":{"inherit":true,"type":"constrained"}} -->
+	<header class="wp-block-group alignwide archive-header" style="padding-bottom:var(--wp--preset--spacing--80)">
 
-		<!-- wp:term-description {"textAlign":"center"} /-->
-
-		<!-- wp:group {"style":{"spacing":{"margin":{"top":"4em","bottom":"4em"}}},"className":"separator-wrapper"} -->
-		<div class="wp-block-group separator-wrapper" style="margin-top:4em;margin-bottom:4em">
-			<!-- wp:separator {"backgroundColor":"secondary","className":"is-style-davis-separator"} -->
-			<hr class="wp-block-separator has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-davis-separator" />
-			<!-- /wp:separator -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+		<div class="wp-block-group">
+			<!-- wp:query-title {"type":"archive","textAlign":"center","fontSize":"medium"} /-->
+			<!-- wp:term-description {"textAlign":"center"} /-->
 		</div>
 		<!-- /wp:group -->
+
+		<!-- wp:separator {"backgroundColor":"secondary","className":"is-style-davis-separator"} -->
+		<hr class="wp-block-separator has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-davis-separator" />
+		<!-- /wp:separator -->
+
 	</header>
 	<!-- /wp:group -->
 
@@ -24,4 +25,4 @@
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer","align":"full","layout":{"inherit":true}} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full","className":"site-footer"} /-->
