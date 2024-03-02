@@ -2,7 +2,7 @@
 
 	Theme Name: Davis Blocks
     Text Domain: davis-blocks
-	Version: 0.2.1
+	Version: 0.2.2
 	Description: Davis Blocks is a clean, simple and fast block theme built for Full Site Editing. It can be used out of the box as a lightweight blog theme, or as a foundation for greater things when customized in the Site Editor.
 	Tags: blog, one-column, custom-background, custom-colors, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
 	Author: Anders Norén
@@ -11,7 +11,7 @@
 	License: GNU General Public License version 2.0
 	License URI: https://gnu.org/licenses/gpl-2.0.html
 	Requires PHP: 5.6
-	Tested up to: 6.3
+	Tested up to: 6.4
 
 /* --------------------------------------------------------------------------------------------- */
 
@@ -59,8 +59,10 @@ input, textarea, select {
 /* Block: Separator */
 
 hr.is-style-davis-separator {
-	border-width: 1px;
-	height: 1px !important;
+	border: none;
+	border-bottom: .5px solid;
+	border-top: .5px solid;
+	overflow: visible !important;
 	position: relative;
 }
 

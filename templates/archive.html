@@ -1,28 +1,21 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","align":"full","className":"site-header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"inherit":true,"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:0;margin-bottom:0">
+<main class="wp-block-group" style="margin-top:0;margin-bottom:0"><!-- wp:group {"tagName":"header","align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80","padding":{"bottom":"var:preset|spacing|80"}}},"className":"archive-header","layout":{"inherit":true,"type":"constrained"}} -->
+<header class="wp-block-group alignwide archive-header" style="padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:query-title {"type":"archive","textAlign":"center","fontSize":"medium"} /-->
 
-	<!-- wp:group {"tagName":"header","align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80","padding":{"bottom":"var:preset|spacing|80"}}},"className":"archive-header","layout":{"inherit":true,"type":"constrained"}} -->
-	<header class="wp-block-group alignwide archive-header" style="padding-bottom:var(--wp--preset--spacing--80)">
+<!-- wp:term-description {"textAlign":"center"} /--></div>
+<!-- /wp:group -->
 
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-		<div class="wp-block-group">
-			<!-- wp:query-title {"type":"archive","textAlign":"center","fontSize":"medium"} /-->
-			<!-- wp:term-description {"textAlign":"center"} /-->
-		</div>
-		<!-- /wp:group -->
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"100px"}} -->
+<div class="wp-block-group"><!-- wp:separator {"backgroundColor":"secondary","className":"is-style-davis-separator"} -->
+<hr class="wp-block-separator has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-davis-separator"/>
+<!-- /wp:separator --></div>
+<!-- /wp:group --></header>
+<!-- /wp:group -->
 
-		<!-- wp:separator {"backgroundColor":"secondary","className":"is-style-davis-separator"} -->
-		<hr class="wp-block-separator has-text-color has-secondary-color has-alpha-channel-opacity has-secondary-background-color has-background is-style-davis-separator" />
-		<!-- /wp:separator -->
-
-	</header>
-	<!-- /wp:group -->
-
-	<!-- wp:template-part {"slug":"loop"} /-->
-
-</main>
+<!-- wp:template-part {"slug":"loop"} /--></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full","className":"site-footer"} /-->

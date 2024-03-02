@@ -3,7 +3,7 @@ Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.2
 Requires PHP: 5.6
-Tested up to: 6.3
+Tested up to: 6.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,12 @@ Included as part of:
 
 
 == Changelog ==
+
+Version 0.2.2 (2024-03-02)
+-------------------------
+- Bumped "Tested up to" to 6.4.
+- Fixed the visuals of the Davis separator style.
+- Fixed border width in templates.
 
 Version 0.2.1 (2023-08-21)
 -------------------------
