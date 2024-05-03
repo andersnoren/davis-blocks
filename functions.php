@@ -15,7 +15,7 @@ add_action( 'after_setup_theme', 'davis_blocks_setup' );
 --------------------------------------------------------------------------------------------------- */
 
 function davis_blocks_styles() {
-	wp_enqueue_style( 'davis-blocks-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'davis-blocks' )->get( 'Version' ) );
+	wp_enqueue_style( 'davis-blocks-styles', get_template_directory_uri() . '/style.css', array(), wp_get_theme( 'davis-blocks' )->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'davis_blocks_styles' );
 
