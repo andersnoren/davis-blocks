@@ -3,22 +3,39 @@ Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.2
 Requires PHP: 5.6
-Tested up to: 6.5
+Tested up to: 7.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://gnu.org/licenses/gpl-2.0.html
 
+A clean, simple and fast block theme built for Full Site Editing.
+
+
+== Description ==
+
+Davis Blocks is a clean, simple and fast block theme built for Full Site Editing. It can be used out of the box as a lightweight blog theme, or as a foundation for greater things when customized in the Site Editor. Demo: https://davis-blocks.andersnoren.se
+
 
 == Installation ==
 
-1. Make sure you're running WordPress 6.0 or later.
+1. Make sure you're running WordPress 6.2 or later.
 2. Upload the theme.
 3. Activate the theme.
 
 
+== Frequently Asked Questions ==
+
+= Where can I get support? =
+Post your question in the Davis Blocks support forum on WordPress.org: https://wordpress.org/support/theme/davis-blocks/
+
+= Where can I request a feature or report a bug? =
+Open an issue in the Davis Blocks GitHub repository: https://github.com/andersnoren/davis-blocks
+
+
 == Copyright ==
 
-Davis Blocks WordPress Theme, Copyright (c) 2022 Anders Norén.
+Davis Blocks WordPress Theme, Copyright (c) 2022-2026 Anders Norén.
+Davis Blocks is distributed under the terms of the GNU GPL.
 
 Davis Blocks is derived from the Tove theme, Copyright (c) 2021 Anders Norén.
 Tove is distributed under the terms of the GNU GPL version 2.0.
@@ -29,7 +46,7 @@ PT Serif font
 License: SIL Open Font License, 1.1 
 Source: https://fonts.google.com/specimen/PT+Serif
 
-Photograph in screenshot.png
+Photograph in screenshot.jpg
 Author: Karol Dach
 License: CC0
 Source: https://stocksnap.io/photo/architectural-design-2XJ1VEE57Q
@@ -44,6 +61,15 @@ Included as part of:
 
 
 == Changelog ==
+
+Version 1.0.0 (2026-11-03)
+-------------------------
+- Davis Blocks is now version 1.0.0, reflecting its status as a stable theme. No breaking changes.
+- Tested with WordPress 7.1.
+- Bumped the copyright year in the footer to 2026.
+- Added the Requires at least header to style.css.
+- Added the demo URL to the theme description.
+- Added Description, FAQ and Upgrade Notice sections to the readme, and updated the minimum WordPress version in the installation instructions to 6.2.
 
 Version 0.2.3 (2024-05-03)
 -------------------------
@@ -110,3 +136,9 @@ Version 0.1.1 (2022-07-05)
 
 Version 0.1 (2022-07-04)
 -------------------------
+
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Tested with WordPress 7.1. Davis Blocks is now version 1.0.0, reflecting its status as a stable theme. No breaking changes.
